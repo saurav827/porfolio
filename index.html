@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saurav Kumar | AI Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+
+body{
+  background:linear-gradient(135deg,#020617,#0f172a);
+  color:white;
+  scroll-behavior:smooth;
+}
+
+header{
+  text-align:center;
+  padding:80px 20px;
+}
+
+header img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+}
+
+h1{font-size:48px;margin-top:15px}
+
+.subtitle{color:#94a3b8;margin-top:10px}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#38bdf8;
+  color:black;
+  border-radius:8px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:white;
+  transform:scale(1.05);
+}
+
+section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2{
+  color:#38bdf8;
+  margin-bottom:25px;
+}
+
+.skills span{
+  display:inline-block;
+  background:#020617;
+  padding:10px 15px;
+  margin:6px;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+.skills span:hover{
+  background:#38bdf8;
+  color:black;
+}
+
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#020617;
+  padding:25px;
+  border-radius:15px;
+  transition:0.4s;
+  box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.03);
+}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+form input,form textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border:none;
+  border-radius:6px;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  background:#020617;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="profile.jpg" alt="Saurav Kumar">
+  <h1>Saurav Kumar 👋</h1>
+  <p class="subtitle">AI Engineer | Web Developer | Freelancer</p>
+  <a href="#" class="btn">Download Resume</a>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>I build AI-powered applications and modern web apps. I focus on solving real-world problems using technology.</p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>Machine Learning</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Streamlit</span>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x150">
+      <h3>Fake News Detector</h3>
+      <p>AI model to detect fake news.</p>
+      <a href="#" class="btn">Live Demo</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x150">
+      <h3>ERP System</h3>
+      <p>Complete business solution.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Contact Me</h2>
+  <form onsubmit="sendMsg(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Saurav Kumar | All Rights Reserved</p>
+</footer>
+
+<script>
+function sendMsg(e){
+  e.preventDefault();
+  alert("Message Sent 🚀 (Demo)");
+}
+</script>
+
+</body>
+</html>
